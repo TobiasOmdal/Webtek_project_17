@@ -39,3 +39,7 @@ article>table>thead>tr>th {
 article>table>tbody>tr>td {
     border: 1px solid black;
 }
+
+img {
+    max-width: 100%;
+}
