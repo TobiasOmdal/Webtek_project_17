@@ -22,3 +22,20 @@ body>header {
 header>img {
     margin-top: 10px;
 }
+
+article>table {
+    border: 1px solid black;
+}
+
+article>table>thead>tr>*,
+article>table>tbody>tr>* {
+    padding: 7px;
+}
+
+article>table>thead>tr>th {
+    border: 1px solid black;
+}
+
+article>table>tbody>tr>td {
+    border: 1px solid black;
+}
