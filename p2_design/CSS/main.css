@@ -24,15 +24,25 @@ header>img {
     margin-top: 10px;
 }
 
+article>table,
 article>table>thead>tr>*,
 article>table>tbody>tr>* {
+    border: 1px solid black;
     padding: 7px;
 }
 
-article>table,
-article>table>thead>tr>th,
-article>table>tbody>tr>td {
-    border: 1px solid black;
+article>table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+article>table>thead>tr>th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+article>ul {
+    padding: auto !important;
 }
 
 img {
