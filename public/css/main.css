@@ -11,6 +11,10 @@ main {
     max-width: 640px;
 }
 
+.downloadBtn {
+    cursor: pointer;
+}
+
 /* header */
 
 header {
@@ -20,6 +24,7 @@ header {
     position: fixed;
     background: white;
     top: 0;
+    z-index: 10;
 }
 
 #logo {
@@ -32,7 +37,7 @@ header h1 {
     position: absolute;
     margin: 0;
     top: 0;
-    left: 90px;
+    left: 96px;
     line-height: 64px;
     color: #00205B;
     text-align: center;
@@ -84,6 +89,75 @@ header .downloadBtn {
     font-size: 25px;
 }
 
+/* dropdown */
+
+#menuBtn {
+    display: none;
+    position: absolute;
+    right: 22px;
+    top: 20px;
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#menuBtn g {
+    fill: #00205B;
+}
+
+#dropDown {
+    visibility: hidden;
+    width: 100%;
+    background: #00205B;
+    height: 250px;
+    transition: .3s;
+    position: fixed;
+}
+
+#dropDown ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 25px 0;
+}
+
+#dropDown li {
+    float: left;
+    padding: 10px;
+}
+
+#dropDown li a {
+	color: white;
+	text-decoration: none;
+	font-size: 23px;
+}
+
+#dropDown .downloadBtn {
+    background: white;
+    font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#dropDown .downloadBtn a {
+    color: #00205B;
+}
+
+@media only screen and (max-width:740px) {
+    #horizontalNav {
+		display: none;
+	}
+	#menuBtn {
+		display: unset;
+	}
+}
 
 /* footer */
 
@@ -153,3 +227,4 @@ footer h4 a {
     text-decoration: none;
     color: white;
 }
+
