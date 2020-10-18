@@ -16,6 +16,7 @@ main {
     cursor: pointer;
 }
 
+
 /* header */
 
 #navBar {
@@ -90,6 +91,7 @@ main {
     font-size: 25px;
 }
 
+
 /* dropdown */
 
 #menuBtn {
@@ -161,6 +163,7 @@ main {
     }
 }
 
+
 /* footer */
 
 html {
@@ -228,4 +231,60 @@ footer h4 a {
     font-family: Audiowide, serif;
     text-decoration: none;
     color: white;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto auto;
+    grid-template-areas: "header header" "s1 s2" "s3 s4" "s5 s6";
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contentContainer>* {
+    padding: 10px;
+    margin: 10px;
+}
+
+#trainerHeader {
+    grid-area: header;
+    text-align: center;
+}
+
+#s1 {
+    grid-area: s1;
+    background-color: #00205B;
+    border-radius: 10px;
+}
+
+#s2 {
+    grid-area: s2;
+    background-color: #484848;
+    border-radius: 10px;
+}
+
+#s3 {
+    grid-area: s3;
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+#s4 {
+    grid-area: s4;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#s5 {
+    grid-area: s5;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+#s6 {
+    grid-area: s6;
+    background-color: burlywood;
+    border-radius: 10px;
 }
