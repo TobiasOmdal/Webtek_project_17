@@ -14,7 +14,7 @@ document.querySelector("header").innerHTML = /*html*/`
             <a href="trenere.html" class="navBtn">Trenere</a>
         </li>
         <li>
-            <a href="om-oss.html" class="navBtn">Om oss</a>
+            <a href="omoss.html" class="navBtn">Om oss</a>
         </li>
         <li class="downloadBtn">
             <a class="navBtn">Last ned</a>
