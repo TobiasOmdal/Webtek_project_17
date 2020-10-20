@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om oss</title>
+    <link rel="stylesheet" href="omoss.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header></header>
+    <h1 id="omHeader">Om Oss</h1>
+
+    <main>
+    <div class="textContainer">
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+        <span>Praesent tristique, augue sed hendrerit semper, ligula risus imperdiet urna, in aliquet nunc nunc sed augue.</span>
+        <span>Donec et augue sem. Mauris cursus sem tellus, in tempus mi sodales ut. Praesent tellus lorem, posuere non tortor eget, finibus feugiat justo. </span>
+        <span>Praesent eu condimentum quam, ultricies mollis justo. Mauris porta felis felis, quis imperdiet elit tristique vitae. Donec a nisl vitae velit feugiat ultricies. Aenean tincidunt ultricies semper. Cras vel semper odio. </span>
+        <span>Duis eu nunc vulputate, maximus erat et, malesuada massa. </span>
+        <span>Morbi maximus a lorem ut tristique. Ut aliquet in ante vel lacinia. Duis tincidunt, erat dictum blandit fermentum, justo augue volutpat ante, eu dictum ante lacus eu ex. </span>
+        <span>Donec tincidunt lacus quis nulla tempor, non vestibulum ante tincidunt. </span>
+        <span>Praesent efficitur nisl et dui bibendum, et volutpat sem scelerisque.</span>
+    </p>
+
+    <p>
+        Skimentor er ett......
+    </p>
+
+    </div>
+    <h1 id="kontaktHeader">Kontakt Oss</h1>
+    <div class="formcontainer">
+
+    <form id="omossform">
+        <br>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <br>
+        <label for="navn"></label>
+        <input type="text" name="navn" id="navn" placeholder="Navn" required>
+        <br>
+        <label for="melding"></label>
+        <br>
+        <textarea name="melding" id="melding" form="omossform" cols="60" rows="10" placeholder="Melding" required></textarea>
+        <br>
+        <input type="button" value="Send inn" id="submit" onclick="return FormValidate()">
+    </form>
+    </div>
+  <br>
+  </main>
+<footer></footer>
+
+
+
+<script src="footer.js"></script>
+<script src="header.js"></script>
+<script src="FormValidation.js"></script>
+</body>
+</html>
