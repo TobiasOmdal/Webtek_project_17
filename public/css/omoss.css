@@ -1,0 +1,58 @@
+body {
+    background-color:  #E7ECF5
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 640px;
+}
+
+#omHeader, #kontaktHeader {
+    margin: 0 auto;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 640px;
+    text-align: center;
+    color: #484848;
+}
+
+.formcontainer {
+    text-align: center;
+    width: 600px;
+    height: 360px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid;
+    }
+
+#email, #navn {
+    height: 40px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    font-family: Roboto;
+}
+
+#melding {
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    font-family: Roboto;
+
+}
+
+#submit {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00205B;
+    color: white;
+    border: none;
+    
+}
+
+#melding:focus, #email:focus, #navn:focus {
+    background-color: #E7ECF5;
+}
