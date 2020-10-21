@@ -1,0 +1,39 @@
+main>h1 {
+    color: #484848;
+}
+.contentContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+    color: #484848;
+}
+
+.contentContainer>div>p, .contentContainer>div>h3{
+    margin: 20px;
+}
+
+#trainerHeader {
+    text-align: center;
+}
+
+.contentContainer>div {
+    border-radius: 15px;
+    background-color: white;
+    margin: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contentContainer>div>img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px){
+    .contentContainer{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
