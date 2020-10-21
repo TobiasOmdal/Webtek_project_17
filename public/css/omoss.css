@@ -18,9 +18,14 @@ main {
     color: #484848;
 }
 
+#omossimg {
+    width: 640px;
+    border-radius: 10px;
+}
+
 .formcontainer {
     text-align: center;
-    width: 600px;
+    width: 640px;
     height: 360px;
     background-color: white;
     border-radius: 10px;
