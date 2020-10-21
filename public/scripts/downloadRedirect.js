@@ -17,7 +17,7 @@ document.querySelectorAll('.downloadBtn').forEach(btn => btn.onclick = () => {
 function visMer(e) {
   e = e || window.event;
   var target = e.target || e.srcElement;
-  var  cardTextEl = target.parentNode.querySelector(".card-text");
+  var  cardTextEl = document.querySelector(".kurs p");
   var dots = cardTextEl.querySelector(".dots");
   var merTekst = cardTextEl.querySelector(".more");
 

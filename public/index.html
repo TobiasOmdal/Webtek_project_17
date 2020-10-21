@@ -6,77 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkiMentor - Den enkleste veien til økt skiglede</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header></header>
 
-    <main> </main>
-
-    <div class="imgContainer"> 
-    	<div>
-    		<img id="img1" src="assets/promo-img.jpg" alt="Promo">
-    	</div>
-    	<div>
-    		<img id="img2" src="assets/intro-1.png" alt="Intro" style="width:1440px; height:auto;"> 
-    	</div>
-    	<div id="title"> 
-    		<h2>SkiMentor</h2>
-    		<p>Den enkleste veien til økt skiglede</p>
-    	</div>
-    	<div id="video">
-    		<video controls muted style="width: 80%;" src="assets/promo-vid.mp4"></video>
-    	</div>
+    <div class="imgContainer">
+        <div class="downloadBtn">
+            <a class="navBtn">Last ned</a>
+        </div>
+        <img id="promoImg" src="assets/promo-img.jpg" alt="SkiMentor promo image">
     </div>
+
+    <main>
+        <img src="assets/intro-1.png" alt="Intro">
+        <div id="title">
+            <h2>SkiMentor</h2>
+            <p>Den enkleste veien til økt skiglede</p>
+        </div>
+        <video controls src="assets/promo-vid.mp4"></video>
+    </main>
 
     <div class="rectangles">
-	  	<div id="rect1">
-			<h2>KURS</h2>
-			<div>
-				<img id="img3" src="assets/intro-2.png" alt="Intro2">
-			</div>
+        <div id="rect1">
+            <main>
+                <h2>KURS</h2>
+                <img id="img3" src="assets/intro-2.png" alt="Intro2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. </p>
+            </main>
         </div>
-    	<div id="rect2">
-    		<h2>CHAT</h2>
-    		<div>
-    			<img id="img4" src="assets/intro-3.png" alt="Intro3">
-    		</div>
-    	</div>
-    	<div id="rect3">
-    		<h2>FORUM</h2>
-    		<div>
-    			<img id="img5" src="assets/intro-4.png" alt="Intro4"> 
-    		</div>
-    	</div>
+        <div id="rect2">
+            <main>
+                <h2>CHAT</h2>
+                <img id="img4" src="assets/intro-3.png" alt="Intro3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. </p>
+            </main>
+        </div>
+        <div id="rect3">
+            <main>
+                <h2>FORUM</h2>
+                <img id="img5" src="assets/intro-4.png" alt="Intro4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. </p>
+            </main>
+        </div>
     </div>
 
-    <div id="slides">  
-    	<div class="slide showing">  
-    		<img src="assets/diverse-bilder/2005-bws-239-skimentor-4518.jpg" />  
-    	</div>  
-    	<div class="slide">  
-    		<img src="assets/diverse-bilder/2005-bws-239-skimentor-4384.jpg"/>  
-    	</div>  
+    <div id="slides">
+        <img class="slide showing" src="assets/diverse-bilder/2005-bws-239-skimentor-4518.jpg" />
+        <img class="slide" src="assets/diverse-bilder/2005-bws-239-skimentor-4384.jpg" />
+        <img class="slide" src="assets/diverse-bilder/2005-bws-239-skimentor-4278.jpg" />
 
-    	<div class="slide">  
-    		<img src="assets/diverse-bilder/2005-bws-239-skimentor-5006.jpg"/>  
-    	</div>  
-    	<div class="slide">  
-    		<img src="assets/diverse-bilder/2005-bws-239-skimentor-4278.jpg"/>   
-    	</div>  
-    	<!-- Navigation arrows -->  
+        <!-- Navigation arrows -->
         <div class="buttons">
-            <button class="controls" id="previous">&lt;</button>
-            <button class="controls" id="pause">&#10074;&#10074;</button>
-            <button class="controls" id="next">&gt;</button>
+            <button class="controls" id="previous">
+                <svg viewBox="0 0 100 100">
+                    <path d="M22.667,50l39.506,39.506l3.161-3.951L29.778,50l35.556-36.346l-3.161-3.16L22.667,50z"
+                        class="arrow"></path>
+                </svg></button>
+            <button class="controls" id="next">
+                <svg viewBox="0 0 100 100">
+                    <path d="M22.667,50l39.506,39.506l3.161-3.951L29.778,50l35.556-36.346l-3.161-3.16L22.667,50z"
+                        class="arrow" transform="translate(100, 100) rotate(180) "></path>
+                </svg>
+            </button>
         </div>
 
-    </div> 
-
-    <div> 
-        <img id="img6" src="assets/intro-5.png" alt="Intro5">
     </div>
 
+    <main>
+        <img id="img6" src="assets/intro-5.png" alt="Intro5">
+    </main>
 
     <footer></footer>
     <script src="scripts/footer.js"></script>

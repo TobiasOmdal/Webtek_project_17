@@ -1,63 +1,29 @@
-body {
-    background-color:  #E7ECF5
-}
-
-main {
-    margin: 0 auto;
-    padding: 20px;
-    width: calc(100% - 40px);
-    max-width: 640px;
-}
-
-#omHeader, #kontaktHeader {
-    margin: 0 auto;
-    padding: 20px;
-    width: calc(100% - 40px);
-    max-width: 640px;
-    text-align: center;
-    color: #484848;
-}
-
 #omossimg {
-    width: 640px;
+    width: 100%;
     border-radius: 10px;
 }
 
-.formcontainer {
+form {
     text-align: center;
-    width: 640px;
-    height: 360px;
     background-color: white;
-    border-radius: 10px;
-    border: 1px solid;
-    }
-
-#email, #navn {
-    height: 40px;
-    width: 450px;
-    border-radius: 10px;
-    border: 2px solid grey;
-    font-family: roboto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 30px 50px;
 }
 
-#melding {
-    width: 450px;
-    border-radius: 10px;
+form>* {
+    width: calc(100% - 34px);
+    padding: 15px;
+    margin: 10px 0;
     border: 2px solid grey;
-    font-family: roboto;
-
+    border-radius: 15px;
+    font-family: roboto, Arial, Helvetica, sans-serif;
 }
 
 #submit {
-    width: 450px;
-    height: 40px;
-    border-radius: 10px;
+    width: 100%;
     background-color: #00205B;
     color: white;
     border: none;
-    
-}
-
-#melding:focus, #email:focus, #navn:focus {
-    background-color: #E7ECF5;
+    cursor: pointer;
 }

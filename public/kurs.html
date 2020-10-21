@@ -2,71 +2,88 @@
 <html lang="nb">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/kurs.css">
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurs</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/kurs.css">
+  <style>
+  </style>
 
 </head>
 
-<body id="kursBody">
-    <header></header>
+<body>
+  <header></header>
 
-    <div class="myDiv">
+  <main>
 
-      <h1 id="kursHeader">Kurs</h1>
-      <div class="kursType">
-        <div class="imageContainer">
-        <img src="assets/nybegynner.jpg" alt="nybegynnerKurs" id="nybegynner" width="601px" height="420px">
+    <h1>Kurs</h1>
+    <div class="kurs">
+      <img src="assets/nybegynner.jpg" alt="nybegynnerKurs">
+      <div class="wrapper">
+        <h3> Nybegynner </h3>
+        <p> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+          amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+          Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+          Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. <span class="dots"> ...</span> <span
+            class="more"> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
+            libero. Fusce vulputate eleifend sapien.
+            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras
+            ultricies mi eu turpis hendrerit fringilla.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi
+            consectetuer lacinia. </span> </p>
+        <button onclick="visMer()" class="minKnapp"> Se mer om kurset </button>
       </div>
-        <h2 class="kursTittel"> Nybegynner </h2>
-        <p class="card-text"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
-          Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. <span class="dots"> ...</span> <span class="more"> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-          Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. </span> </p>
-          <button onclick="visMer()" class="minKnapp"> Se mer om kurset </button>
-      </div>
-
-
-      <div class="kursType">
-        <div class="imageContainer">
-        <img src="assets/mosjonist.jpg" alt="mosjonistKurs" id="mosjonist" width="601px" height="420px">
-      </div>
-        <h2 class="kursTittel"> Mosjonist </h2>
-        <p class="card-text"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
-          Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. <span class="dots"> ...</span> <span class="more"> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-          Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. </span>
-        </p>
-          <button onclick="visMer()" class="minKnapp"> Se mer om kurset </button>
-      </div>
-
-      <div id="akt" class="kursType">
-          <div id="imageContainer">
-            <img src="assets/aktiv.jpg" alt="aktivKurs" id="aktiv" width="601px" height="420px">
-          </div>
-          <h2 class="kursTittel"> Aktiv </h2>
-              <p class="card-text"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
-                Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. <span class="dots"> ...</span> <span class="more"> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-                Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. </span>
-              </p>
-              <button onclick="visMer()" class="minKnapp"> Se mer om kurset </button>
-      </div>
-
     </div>
 
-    <footer></footer>
+    <div class="kurs">
+      <img src="assets/mosjonist.jpg" alt="mosjonistKurs">
+      <div class="wrapper">
+        <h3> Mosjonist </h3>
+        <p> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+          amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+          Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+          Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. <span class="dots"> ...</span> <span
+            class="more"> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
+            libero. Fusce vulputate eleifend sapien.
+            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras
+            ultricies mi eu turpis hendrerit fringilla.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi
+            consectetuer lacinia. </span>
+        </p>
+        <button onclick="visMer()" class="minKnapp"> Se mer om kurset </button>
+      </div>
+    </div>
 
-    <script src="scripts/footer.js"></script>
-    <script src="scripts/header.js"> </script>
-    <script src="scripts/downloadRedirect.js"> </script>
+    <div id="akt" class="kurs">
+      <img src="assets/aktiv.jpg" alt="aktivKurs">
+      <div class="wrapper">
+        <h3> Aktiv </h3>
+        <p> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+          amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+          Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+          Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. <span class="dots"> ...</span> <span
+            class="more"> Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
+            libero. Fusce vulputate eleifend sapien.
+            Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras
+            ultricies mi eu turpis hendrerit fringilla.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi
+            consectetuer lacinia. </span>
+        </p>
+        <button onclick="visMer()" class="minKnapp"> Se mer om kurset </button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer></footer>
+
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/header.js"> </script>
+  <script src="scripts/downloadRedirect.js"> </script>
 
 </body>
 

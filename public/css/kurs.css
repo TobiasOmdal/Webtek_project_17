@@ -1,79 +1,39 @@
-body {
-  background-color: #E7ECF5;
-}
-
-@media only screen and (max-width:900px) {
-#kursBody .myDiv {
-    width: 100%;
-    left: 1vw;
-    right: 1vw;
-  }
-}
-
-.myDiv {
-  margin: auto;
-   margin-top: 30px;
-   width: 600px;
-   margin-bottom: 100px;
-}
-
-#kursHeader {
-  position: relative;
-  margin: auto;
-  text-align: center;
-  font-size: 70px;
-  color: #484848;
-  font-family: roboto;
-  margin-bottom: 50px;
-
+main {
+  max-width: 400px;
 }
 
 .more {
   display: none;
 }
 
-.kursType {
-  position: relative;
-  margin-top: 10px;
+.kurs {
   margin-bottom: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #FFFFFF;
-  border-radius: 25px;
-
+  border-radius: 15px;
 }
 
-.kursType .imageContainer {
+.kurs img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
-.card-text {
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-
-.kursTittel {
-  margin-left: 60px;
-}
-
-.card-text, .KursTittel {
-  padding-left: 60px;
-  padding-right: 30px;
+h3 {
   color: #484848;
-  font-family: roboto;
+}
+
+.wrapper {
+  padding: 20px;
+  padding-top: 0;
 }
 
 .minKnapp {
-  font-size: 20px;
-  margin-bottom: 30px;
-  margin-left: 60px;
-  background:none;
-  border:none;
-  padding:0;
+  font-size: 16px;
+  background: none;
+  border: none;
   cursor: pointer;
   text-transform: uppercase;
   color: #00205B;
   font-family: roboto;
   font-weight: bold;
-  }
+  padding: 0;
+}
