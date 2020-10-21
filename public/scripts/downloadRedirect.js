@@ -30,4 +30,4 @@ function visMer(e) {
     target.innerHTML = "Vis mindre";
     merTekst.style.display = "inline";
   }
-}
+};
