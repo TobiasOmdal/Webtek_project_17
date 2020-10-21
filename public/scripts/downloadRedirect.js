@@ -11,3 +11,23 @@ document.querySelectorAll('.downloadBtn').forEach(btn => btn.onclick = () => {
         window.open("https://nrk.no");
     }
 });
+
+/* Kursside  */
+
+function visMer(e) {
+  e = e || window.event;
+  var target = e.target || e.srcElement;
+  var  cardTextEl = target.parentNode.querySelector(".card-text");
+  var dots = cardTextEl.querySelector(".dots");
+  var merTekst = cardTextEl.querySelector(".more");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    target.innerHTML = "Se mer om kurset";
+    merTekst.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    target.innerHTML = "Vis mindre";
+    merTekst.style.display = "inline";
+  }
+}
