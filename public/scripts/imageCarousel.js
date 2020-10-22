@@ -1,29 +1,34 @@
-let currentSlide = 0;  
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide, 3000);
+
 const slides = document.querySelectorAll('#slides .slide'),
-    slideInterval = setInterval(nextSlide,3000),   
     next = document.getElementById('next'),
     previous = document.getElementById('previous'),
     controls = document.querySelectorAll('.controls');
 
-
 function nextSlide() {
-    goToSlide(currentSlide+1);
+    goToSlide(currentSlide + 1);
 }
 
 function previousSlide() {
-    goToSlide(currentSlide-1);
+    goToSlide(currentSlide - 1);
 }
 
 function goToSlide(n) {
     slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
+    currentSlide = (n + slides.length) % slides.length;
     slides[currentSlide].className = 'slide showing';
 }
 
-next.onclick = function() {
+next.onclick = function () {
     nextSlide();
+    // Restart interval
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 3000);
 };
 
-previous.onclick = function() {
+previous.onclick = function () {
     previousSlide();
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 3000);
 };
