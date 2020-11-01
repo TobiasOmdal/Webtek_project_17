@@ -29,6 +29,17 @@
 	margin-top: -70px;
 }
 
+@media only screen and (max-width:740px) { 
+	.imgContainer .downloadBtn {
+		width: 100%;
+		margin: 0 auto;
+		padding: 10px 0;
+		border-radius: 0;
+		margin-top: -5px;
+		position: initial;
+	}
+}
+
 main>* {
 	width: 100%;
 }
@@ -48,11 +59,22 @@ video {
 	color: #00205B;
 	margin: 0;
 	font-family: 'Baloo 2', arial;
+	font-size: 45px;
 }
 
 #title p {
 	color: #333;
 	font-style: italic;
+	font-size: 25px;
+}
+
+#arguments {
+	margin-top: 60px;
+}
+
+#promoVideo {
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Rectangles */
