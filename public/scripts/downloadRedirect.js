@@ -17,17 +17,9 @@ document.querySelectorAll('.downloadBtn').forEach(btn => btn.onclick = () => {
 function visMer(e) {
   e = e || window.event;
   var target = e.target || e.srcElement;
-  var  cardTextEl = document.querySelector(".kurs p");
+  var  cardTextEl = target.parentNode.querySelector(".text");
   var dots = cardTextEl.querySelector(".dots");
   var merTekst = cardTextEl.querySelector(".more");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    target.innerHTML = "Se mer om kurset";
-    merTekst.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    target.innerHTML = "Vis mindre";
-    merTekst.style.display = "inline";
-  }
+  $(merTekst).slideToggle("slow","swing");
+  $(dots).slideToggle("fast");
 };
