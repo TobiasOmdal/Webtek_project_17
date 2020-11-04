@@ -566,7 +566,7 @@ h3 {
     font-family: roboto, Arial, Helvetica, sans-serif;
 }
 
-#submit {
+#omoss-content #submit {
     width: 100%;
     background-color: #00205B;
     color: white;
