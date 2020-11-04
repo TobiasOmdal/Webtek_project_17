@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkiMentor - Den enkleste veien til økt skiglede</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" href="assets/logo.png" sizes="16x16"/>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="Enkel og brukervennlig app som gjør deg bedre på ski – lær hva du vil, når du vil, hvor du vil! 
+        Instruksjonsvideoer for alle nivåer, utfordringer og behov!Utviklet av aktive skiløpere og trenere – for deg! 
+        Langrenn er fantastisk fysisk trening og mental hygiene – vi viser deg hvordan!">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         </div>
     </div>
 
-    <main>
+    <div class="content-positioning">
         <img src="assets/intro-1.png" alt="Intro">
         <div id="title">
             <h2>SkiMentor</h2>
@@ -33,42 +34,57 @@
             <li>Langrenn er fantastisk fysisk trening og mental hygiene – vi viser deg hvordan!</li>
         </ol>
         <video controls src="assets/promo-vid.mp4" id="promoVideo"></video>
-    </main>
+    </div>
 
     <div class="rectangles">
         <div id="rect1">
-            <main>
+            <div class="content-positioning">
                 <h2>KURS</h2>
                 <img id="img3" src="assets/intro-2.png" alt="Intro2">
                 <p>Enkel og brukervennlig app – lær hva du vil, når du vil, hvor du vil. Et komplett teknikkurs med
                     instruksjonsvideoer for alle nivåer, utfordringer og behov! Utviklet av aktive skiløpere og trenere
                     – for deg!</p>
-            </main>
+            </div>
         </div>
         <div id="rect2">
-            <main>
+            <div class="content-positioning">
                 <h2>DIGICOACH</h2>
                 <img id="img4" src="assets/intro-3.png" alt="Intro3">
                 <p>Oppgrader till Gull-abonnement og få individuell oppfølging fra våre SkiMentorer i
                     <strong>DigiCoach</strong>.
                     Personlig oppfølging har aldri vært enklere og mer tilgjengelig. </p>
-            </main>
+            </div>
         </div>
         <div id="rect3">
-            <main>
+            <div class="content-positioning">
                 <h2>FORUM</h2>
                 <img id="img5" src="assets/intro-4.png" alt="Intro4">
                 <p> Bli inspirert på SkiMentors <strong>forum</strong>. Diskuter og plukk opp gode tips og relevant
                     faglig innhold fra
                     SkiMentor-gjengen og andre medlemmer. </p>
-            </main>
+            </div>
         </div>
     </div>
 
     <div id="slides">
-        <img class="slide showing" src="assets/diverse-bilder/2005-bws-239-skimentor-4518.jpg" />
-        <img class="slide" src="assets/diverse-bilder/2005-bws-239-skimentor-4384.jpg" />
-        <img class="slide" src="assets/diverse-bilder/2005-bws-239-skimentor-4278.jpg" />
+        <img class="slide showing" src="assets/diverse-bilder/1.jpg" alt="SkiMentorintruktører" />
+        <img class="slide" src="assets/diverse-bilder/2.jpg" alt="SkiMentor snøskuter" />
+        <img class="slide" src="assets/diverse-bilder/3.jpg" alt="SkiMentor snøskuterfilming" />
+        <img class="slide" src="assets/diverse-bilder/4.jpg" alt="SkiMentor Simen Østensen" />
+        <img class="slide" src="assets/diverse-bilder/5.jpg" alt="SkiMentor Andrew Musgrave" />
+        <img class="slide" src="assets/diverse-bilder/6.jpg" alt="SkiMentor teknikk" />
+        <img class="slide" src="assets/diverse-bilder/7.jpg" alt="SkiMentor drakt" />
+        <img class="slide" src="assets/diverse-bilder/8.jpg" alt="SkiMentor teknikkgjennomgang" />
+        <img class="slide" src="assets/diverse-bilder/9.jpg" alt="SkiMentor våre instruktører" />
+        <img class="slide" src="assets/diverse-bilder/10.jpg" alt="SkiMentor appen" />
+        <img class="slide" src="assets/diverse-bilder/11.jpg" alt="SkiMentor appen teknikk" />
+        <img class="slide" src="assets/diverse-bilder/12.jpg" alt="SkiMentor lær teknikk app" />
+        <img class="slide" src="assets/diverse-bilder/13.jpg" alt="SkiMentor drone" />
+        <img class="slide" src="assets/diverse-bilder/14.jpg" alt="SkiMentor teknikk" />
+        <img class="slide" src="assets/diverse-bilder/15.jpg" alt="SkiMentor" />
+        <img class="slide" src="assets/diverse-bilder/16.jpg" alt="Instruktører" />
+        <img class="slide" src="assets/diverse-bilder/17.jpg" alt="SkiMentorappen" />
+        <img class="slide" src="assets/diverse-bilder/18.jpg" alt="SkiMentor Emilie Fleten" />
 
         <!-- Navigation arrows -->
         <div class="buttons">
@@ -87,15 +103,17 @@
 
     </div>
 
-    <main>
+    <div class="content-positioning">
         <div id="badges">
-            <img src="assets/google-play-badge.png" alt="">
-            <img src="assets/app-store-badge.svg" alt="">
+            <a href="https://play.google.com/store/apps/details?id=com.magson.SkiMentor"><img
+                    src="assets/google-play-badge.png" alt=""></a>
+            <!-- TODO: add app store link when app launches -->
+            <a href="itunes.com"><img src="assets/app-store-badge.svg" alt=""></a>
         </div>
         <div class="downloadBtn lastcall">
             <a class="navBtn">Last ned</a>
         </div>
-    </main>
+    </div>
 
     <footer></footer>
     <script src="scripts/footer.js"></script>
