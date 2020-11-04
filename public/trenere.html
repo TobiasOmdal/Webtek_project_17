@@ -1,21 +1,38 @@
 <!DOCTYPE html>
+<!--Specifying english language-->
 <html lang="en">
 
+<!--Metadata-->
 <head>
+    <!--Unicode characterset-->
     <meta charset="UTF-8">
+    <!--Makes the website scalable on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--website title-->
     <title>SkiMentorer</title>
+    <!--main css file-->
     <link rel="stylesheet" href="main.css">
+    <!--Separate css file, specifically for this webpage-->
+    <link rel="stylesheet" href="trenere.css">
 </head>
 
 <body>
+    <!--Header where js module is inserted-->
     <header></header>
+    <!--div, to structure the body/main part of the document-->
     <div class="content-positioning">
+        <!--document header-->
         <h1 id="trainerHeader">Våre SkiMentorer</h1>
+        <!--div container, containing main elements, like pictures and text-->
         <div class="contentContainer">
+
+            <!-- separating the separate piuctures and text into divs-->
             <div>
+                <!--image with alt and title attrtibute-->
                 <img src="assets/trener5.jpg" alt="Picture of Simen Østensen" title="Simen Østensen">
+                <!--Small header tag-->
                 <h3>Simen Østensen</h3>
+                <!--Text elements -> separate p tags to line break (p is a block element)-->
                 <p>Super-mosjonist😉</p>
                 <p>Beste resultat: NM gull 15 km klassisk, 3.plass Tour de Ski, 1. plass Marcialonga</p>
                 <p>Største styrke: Diagonalgang og staking </p>
@@ -57,9 +74,15 @@
 
         </div>
     </div>
+
+    <!--Footer, where js module is inserted-->
     <footer></footer>
+
+    <!--Header module-->
     <script src="scripts/header.js"></script>
+    <!--Footer module-->
     <script src="scripts/footer.js"></script>
+    <!--Download redirect for when download button is clicked-->
     <script src="scripts/downloadRedirect.js"></script>
 
 </body>
