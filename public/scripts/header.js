@@ -46,16 +46,18 @@ document.querySelector("header").innerHTML = /*html*/`
 </nav>
 
 `;
+
+//0.2 second duration
+const options = {
+    duration: 200,
+    fill: 'forwards',
+    easing: 'ease-in-out'
+};
+
 //Boolean value that is initialized to false
 var dropDownIsOpen = false;
 //Function to animate the hamburger svg -> takes in a boolean (open or not)
 function animateHamburgerBtn(open) {
-    //0.2 second duration
-    const options = {
-        duration: 200,
-        fill: 'forwards',
-        easing: 'ease-in-out'
-    };
     //animates depending on whether or not open is true or false
     if (open) {
         document.getElementById('topHamburgerLine').animate([
