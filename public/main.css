@@ -114,6 +114,7 @@ body {
 
 /* dropdown */
 
+/*Positioning, removing of background, display, border and outline and change of colors*/
 #menuBtn {
     display: none;
     position: absolute;
@@ -127,10 +128,15 @@ body {
     cursor: pointer;
 }
 
+/*Filling the svg groups' color*/
 #menuBtn g {
     fill: #00205B;
 }
 
+/*
+    Making dropdown invisible until clioked, having it span 100%, 
+    changing height, fixing position and animating the transition. 
+*/
 #dropDown {
     visibility: hidden;
     width: 100%;
@@ -141,6 +147,7 @@ body {
     z-index: 5;
 }
 
+/*Displaying the list as flexbox, considering they're only facing downwards in a line*/
 #dropDown ul {
     display: flex;
     justify-content: center;
@@ -149,16 +156,17 @@ body {
 }
 
 #dropDown li {
-    float: left;
     padding: 10px;
 }
 
+/*Removing list styling*/
 #dropDown li a {
     color: white;
     text-decoration: none;
     font-size: 23px;
 }
 
+/*Setting colors, font size and family as well as border and width of download btn in dropdown*/
 #dropDown .downloadBtn {
     background: white;
     font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
@@ -169,11 +177,12 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
-
+/*Changing color from the usual white to blue*/
 #dropDown .downloadBtn a {
     color: #00205B;
 }
 
+/*Removing the larger navbar whenever the width is less than 740px*/
 @media only screen and (max-width:740px) {
     #horizontalNav {
         display: none;
@@ -560,11 +569,13 @@ h3 {
 
 /* OM OSS */
 
+/*Image-span all of divs width and rounding corners*/
 #omossimg {
     width: 100%;
     border-radius: 10px;
 }
 
+/*alignment, shadow, rounding of corners and background color of form*/
 #omoss-content form {
     text-align: center;
     background-color: white;
@@ -574,6 +585,10 @@ h3 {
     width: calc(100% - 100px);
 }
 
+/*
+    Positioning, rounding corners, bordering and font family of elements inside form
+    This includes the two input fields, the textarea and the button
+*/
 #omoss-content form>* {
     width: calc(100% - 34px);
     padding: 15px;
@@ -583,6 +598,7 @@ h3 {
     font-family: roboto, Arial, Helvetica, sans-serif;
 }
 
+/*Removing border, 100% span, changing colors and changing cursor of button inside form*/
 #omoss-content #submit {
     width: 100%;
     background-color: #00205B;
