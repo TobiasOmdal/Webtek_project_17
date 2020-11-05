@@ -46,14 +46,17 @@ document.querySelector("header").innerHTML = /*html*/`
 </nav>
 
 `;
-
+//Boolean value that is initialized to false
 var dropDownIsOpen = false;
+//Function to animate the hamburger svg -> takes in a boolean (open or not)
 function animateHamburgerBtn(open) {
+    //0.2 second duration
     const options = {
         duration: 200,
         fill: 'forwards',
         easing: 'ease-in-out'
     };
+    //animates depending on whether or not open is true or false
     if (open) {
         document.getElementById('topHamburgerLine').animate([
             { transform: 'rotate(0deg)' },
@@ -74,14 +77,17 @@ function animateHamburgerBtn(open) {
         ], options);
     }
 }
-
+//const reference to id dropdown
 const dropDown = document.getElementById('dropDown');
 
+//When menubutton is clicked it toggles an onclick event that invokes the toggleDropDown function
 document.getElementById('menuBtn').onclick = (event) => {
     toggleDropDown();
     event.stopPropagation();
 };
 
+//Invokes the animateHamburgerBtn function and passes in false or true depending on
+//whether or not it is already open, and styles the dropdown
 function toggleDropDown() {
     if (dropDownIsOpen) {
         animateHamburgerBtn(false);
