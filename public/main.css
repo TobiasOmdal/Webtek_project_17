@@ -1,4 +1,4 @@
-/*Importing google font roboto*/
+/*Importing google fonts roboto, Autowide and Baloo*/
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+2:wght@800&family=Roboto&display=swap");
 
 /*Default behavior for documents' body*/
@@ -198,6 +198,8 @@ html {
     position: relative;
     min-height: 100%;
 }
+
+/*Setting footer at bottom of page, styling and making space above it*/
 footer {
     background-color: #00205B;
     margin-top: 30px;
@@ -214,7 +216,7 @@ footer hr {
     border: none;
     margin: 0;
 }
-
+/*aligning, padding, coloring and changing font style of skimentor text in footer*/
 footer h3 {
     text-align: center;
     padding: 37px 0 5px 0;
@@ -224,16 +226,19 @@ footer h3 {
     color: white;
 }
 
+/*removing decoration of skimentor text*/
 footer h3 a {
     text-decoration: none;
     color: white;
 }
 
+/*Centering the links*/
 #legalLinks {
     display: table;
     margin: 0 auto;
 }
 
+/*removing link styling, changing color and animating the color switch*/
 .legalLink {
     color: #cccccc;
     text-decoration: none;
@@ -242,6 +247,7 @@ footer h3 a {
     transition: 0.1s;
 }
 
+/*Switching color when hovering links*/
 .legalLink:hover {
     color: #999999;
 }
@@ -250,6 +256,7 @@ footer h4 {
     text-align: center;
 }
 
+/*Setting font to autowide*/
 footer h4 a {
     font-family: Audiowide, serif;
     text-decoration: none;
@@ -272,6 +279,7 @@ footer h4 a {
     position: relative;
 }
 
+/*positioning image and btn in center, changing their width and font styling*/
 .imgContainer .downloadBtn {
     background: #00205B;
     font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
@@ -289,6 +297,7 @@ footer h4 a {
     margin-top: -70px;
 }
 
+/*Changing styling of image and button when below 740px*/
 @media only screen and (max-width:740px) {
     .imgContainer .downloadBtn {
         width: 100%;
@@ -300,6 +309,7 @@ footer h4 a {
     }
 }
 
+/*Having all elements inside content positioning span 100%*/
 .content-positioning>* {
     width: 100%;
 }
@@ -322,17 +332,20 @@ video {
     font-size: 45px;
 }
 
+/*Making the text cursive*/
 #title p {
     color: #333;
     font-style: italic;
     font-size: 25px;
 }
 
+/*making space on top, and 30px on left and right respectively*/
 #arguments {
     margin-top: 60px;
     width: calc(100% - 60px);
 }
 
+/*Rounding the corners of video and shadow with 0.25 opacity*/
 #promoVideo {
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -367,6 +380,7 @@ video {
     margin: 0 auto;
 }
 
+/*Subtle gradients from top to bottom*/
 #rect1 {
     background: linear-gradient(#FD005F, #FE4C8F);
 }
@@ -401,6 +415,7 @@ video {
     display: block;
 }
 
+/*buttons to switch photos that is displayed as cirles with animation and cursor*/
 .controls {
     outline: none;
     background: #fff;
@@ -414,6 +429,7 @@ video {
     transition: 0.3s;
 }
 
+/*Darker shadow and background on hover/focus*/
 .controls:hover, .controls:focus {
     background: #eee;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.14), 0 1px 28px 0 rgba(0, 0, 0, 0.12), 0 3px 15px -1px rgba(0, 0, 0, 0.4);
@@ -437,6 +453,7 @@ video {
 
 /* Download section */
 
+/*Two columns for the two download buttons*/
 #badges {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -448,7 +465,7 @@ video {
     height: 65px;
     margin: 0 auto;
 }
-
+/*Aligning download buttons under eachother when below 740px*/
 @media only screen and (max-width:740px) {
     #badges {
         grid-template-columns: 1fr;
@@ -460,7 +477,7 @@ video {
         margin: 15px 0;
     }
 }
-
+/*button styling*/
 .lastcall {
     background: #00205B;
     font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
@@ -475,10 +492,12 @@ video {
 
 /* KURS */
 
+/*Changing the width of content*/
 .kurs-content {
     max-width: 400px;
 }
 
+/*Animating the max width and display*/
 .more {
     max-height: 0;
     overflow: hidden;
@@ -486,6 +505,7 @@ video {
     display: block;
 }
 
+/*rounding corners, shadow and hiding overflow of course descriptions*/
 .kurs {
     margin-bottom: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -502,11 +522,13 @@ h3 {
     color: #484848;
 }
 
+/*Creating space inside div, and outside text*/
 .wrapper {
     padding: 20px;
     padding-top: 0;
 }
 
+/*No background color, uppercase text and cursor on button*/
 .minKnapp {
     font-size: 16px;
     background: none;
@@ -519,6 +541,7 @@ h3 {
     padding: 0;
 }
 
+/*Shadow when hovering courses*/
 .kurs:hover {
     transition: 0.5s;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
