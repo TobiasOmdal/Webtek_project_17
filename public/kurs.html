@@ -11,20 +11,23 @@
 
 <body>
   <header></header>
-
+  <!--main div, where all elements are added-->
   <div class="content-positioning kurs-content">
-
+    <!--header-->
     <h1>Kurs</h1>
+    <!--divs that contains text and image-->
     <div class="kurs">
-      <img src="assets/nybegynner.jpg" alt="nybegynnerKurs">
+      <img src="assets/nybegynner.jpg" alt="nybegynnerKurs" title="Nybgynner">
+      <!--Wrapper that contains text-->
       <div class="wrapper">
         <h3> Nybegynner </h3>
         <p class="text"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
           amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
           Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-          Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+          Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.<!--Span with dots-->
           Sed fringilla mauris sit amet nibh. Donec sodales sagittis.<span class="dots"> ...</span>
-        <span class="more">
+          <!--Additional text added through javascript functions-->
+          <span class="more">
           Consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
             libero. Fusce vulputate eleifend sapien.
             Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras
@@ -33,12 +36,12 @@
             consectetuer lacinia.
         </span>
         </p>
+        <!--Button that invokes the visMer function with a reference to itself as a parameter on click-->
         <button onclick="visMer(this)" class="minKnapp"> Se mer om kurset </button>
       </div>
     </div>
-
     <div class="kurs">
-      <img src="assets/mosjonist.jpg" alt="ViderekommenKurs">
+      <img src="assets/mosjonist.jpg" alt="ViderekommenKurs" title="Viderekommen">
       <div class="wrapper">
         <h3> Viderekommen </h3>
         <p class="text"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
@@ -58,7 +61,7 @@
     </div>
 
     <div id="akt" class="kurs">
-      <img src="assets/aktiv.jpg" alt="aktivKurs">
+      <img src="assets/aktiv.jpg" alt="aktivKurs" title="Aktiv">
       <div class="wrapper">
         <h3> Aktiv </h3>
         <p class="text"> Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
@@ -80,20 +83,29 @@
   </div>
 
   <footer></footer>
-
+  <!--External scripts/modules-->
   <script src="scripts/footer.js"></script>
   <script src="scripts/header.js"> </script>
   <script src="scripts/downloadRedirect.js"> </script>
   <script>
+    //Function that displays more text
     function visMer(btn) {
+      //const reference to clicked button's parent
       const parent = btn.parentNode;
+      //const reference to dots class' parent 
       const dots = parent.querySelector(".dots");
+      //const reference to 'more' class
       const merTekst = parent.querySelector(".more");
+
+      //if dots are not displayed, display them, add text to button
+      // and remove max height 
       if (dots.style.display === "none") {
         dots.style.display = "inline";
         btn.innerHTML = "Se mer om kurset";
         merTekst.style.maxHeight = null;
-      } else {
+      }
+      //if the dots are displayed, remove them, change button text and add max height 
+      else {
         dots.style.display = "none";
         btn.innerHTML = "Vis mindre";
         merTekst.style.maxHeight = merTekst.scrollHeight + "px";
