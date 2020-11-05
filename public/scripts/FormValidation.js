@@ -1,12 +1,15 @@
 
 //Variables from kontakt.html
-var email = document.getElementById("email");
-var navn = document.getElementById("navn");
-var melding = document.getElementById("melding");
-var submit = document.getElementById("submit");
+const email = document.getElementById("email");
+const navn = document.getElementById("navn");
+const melding = document.getElementById("melding");
+const submit = document.getElementById("submit");
+const form = document.getElementById("omossform");
 
-//the function that validates the form that triggers on submit
-function FormValidate() {
+//The event that handles submitting of forms
+form.onsubmit = (e) => {
+    //preventing default behavior, like sending data 
+    e.preventDefault();
     console.log(email.value);
     console.log(navn.value);
     console.log(melding.value);
