@@ -1,29 +1,36 @@
+/*Importing google font roboto*/
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+2:wght@800&family=Roboto&display=swap");
+
+/*Default behavior for documents' body*/
 body {
     margin: 0;
     padding-top: 64px;
     font-family: roboto;
     background-color: #E7ECF5;
     color: #484848;
+    padding-bottom: 200px;
 }
 
+/*Positioning for elements in main div*/
 .content-positioning {
     margin: 0 auto;
     padding: 20px;
     width: calc(100% - 40px);
     max-width: 640px;
 }
-
+/*Alignment of head inside div*/
 .content-positioning h1 {
     text-align: center;
 }
 
+/*Making download button more interactive*/
 .downloadBtn {
     cursor: pointer;
 }
 
 /* header */
 
+/*Making navbar fixed to top, fixed height, and changing alpha/visibility value*/
 #navBar {
     height: 64px;
     width: 100%;
@@ -34,11 +41,13 @@ body {
     z-index: 10;
 }
 
+/*Setting logo in top left*/
 #logo {
     height: 50px;
     margin: 7px 25px;
 }
 
+/*Positioning skimentor header in navbar and changing font-family*/
 #navBar h1 {
     font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
     position: absolute;
@@ -50,10 +59,12 @@ body {
     text-align: center;
 }
 
+/*Changing underlining and other styling from links*/
 #homeLink {
     text-decoration: none;
 }
 
+/*Positioning and color of subpage links*/
 #horizontalNav {
     color: #484848;
     position: absolute;
@@ -61,6 +72,7 @@ body {
     right: 0;
 }
 
+/*Removing overflow and list-specific styling*/
 #horizontalNav ul {
     list-style: none;
     margin: 0;
@@ -69,10 +81,12 @@ body {
     vertical-align: bottom;
 }
 
+/*Making the download button stay the towards the right*/
 #horizontalNav li {
     float: left;
 }
 
+/*Displaying links as block elements and making it bolder*/
 #horizontalNav .navBtn {
     display: block;
     padding: 0 12px;
@@ -83,6 +97,7 @@ body {
     line-height: 64px;
 }
 
+/*Background color, font styling and positioning of download btn*/
 #navBar .downloadBtn {
     background: #00205B;
     padding: 0 30px;
@@ -91,6 +106,7 @@ body {
     margin-left: 20px;
 }
 
+/*Color and font size of text inside download btn*/
 #horizontalNav .downloadBtn .navBtn {
     color: white;
     font-size: 25px;
@@ -173,11 +189,6 @@ html {
     position: relative;
     min-height: 100%;
 }
-
-body {
-    padding-bottom: 200px;
-}
-
 footer {
     background-color: #00205B;
     margin-top: 30px;
