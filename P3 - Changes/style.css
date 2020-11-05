@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+2:wght@800&family=Roboto&display=swap");
+
+* {
+    font-family: roboto;
+}
+
+main>article>h2{
+    font-size: 24px;
+}
+
+main>article>ol>li, main>article>p{
+    font-size: 20px;
+}
+
+body {
+    background-color: lightgrey;
+    color: #484848;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: auto;
+}
+
+body>header {
+    text-align: center;
+}
